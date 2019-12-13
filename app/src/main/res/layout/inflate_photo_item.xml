@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="itemBinding"
+            type="com.uma.viewpager2withrecycler.ItemModel"/>
+<!--            type="com.uma.viewpager2withrecycler.ItemViewModel" />-->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dp85"
+        android:layout_height="@dimen/dp85"
+        android:layout_margin="@dimen/dp2">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:scaleType="centerCrop"
+            android:background="@color/image_temp_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+<!--        app:imageUrl="@{itemBinding.drawable}"-->
+<!--        app:imageUrl="@{itemBinding.img}"-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/photo_border2" />
+        <View
+            android:id="@+id/imgBorder"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="@drawable/photo_border" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
